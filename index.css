@@ -1,0 +1,100 @@
+body {
+        height: 100vh;
+}
+
+main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+}
+
+.sign-in-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 36px;
+        border: 1px solid rgba(37, 245, 82, 0.1);
+        border-radius: 16px;
+        width: 30%;
+        min-width: 360px;
+        box-shadow: 0 0 128px -32px rgba(37, 245, 82, 0.1);
+}
+
+.sign-in-container h2 {
+        margin: 4px;
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #e7e7ff;
+}
+
+.sign-in-container hr {
+        margin-bottom: 36px;
+        border: #ffffff solid 1px;
+}
+
+.sign-in-container label {
+        display: block;
+        font-weight: 700;
+        font-size: 1.15em;
+        color: #ffffff;
+}
+
+.sign-in-container input {
+        font-size: 1.05em;
+        display: block;
+        margin: 4px;
+        margin-bottom: 24px;
+        padding: 12px 22px 12px 22px;
+        border: none;
+        border-radius: 999px;
+        background-color: #c2ffc5;
+        transition: 0.35s;
+}
+.sign-in-container input:focus {
+        outline: none;
+        background-color: #ffffff;
+}
+
+.sign-in {
+        display: block;
+        text-align: center;
+        background-color: #c2ffc5;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 12px 22px 12px 22px;
+        border-radius: 999px;
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.35s;
+}
+.sign-in:hover {
+        background-color: #ffffff;
+}
+
+.create-account {
+        color: #e7e7ff;
+        text-decoration: none;
+}
+.create-account:hover {
+        text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+        .sign-in-container {
+                padding: 36px 12px 36px 12px;
+                min-width: 240px;
+        }
+
+        .sign-in-container hr {
+                width: 75%;
+        }
+
+        .sign-in-container input {
+                font-size: 1em;
+                padding: 12px 8px 12px 8px;
+        }
+}

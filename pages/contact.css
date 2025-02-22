@@ -1,0 +1,199 @@
+.services-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+}
+
+.services {  
+        font-weight: 800;
+        font-size: 3em;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 24px;
+}
+
+article {
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.article-left {
+        align-items: start;
+}
+
+.article-left section {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+
+}
+
+.article-left section h1 {
+        padding: 24px;
+        padding-bottom: 0;
+        margin: 0;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+}
+
+.article-left section a {
+        margin-left: auto;
+        background-color: transparent;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #caffcd;
+        text-decoration: none;
+        border-radius: 999px;
+        border: 1px solid #caffcd;
+        transition: 0.35s ease;
+        margin-right: 16px;
+        margin-bottom: 16px;
+}
+.article-left section a:hover {
+        background-color: #caffcd;
+        color: #000000;
+        transform: translateY(-8px);
+}
+
+.article-left section span {
+        display: inline;
+        padding: 24px;
+        font-size: 1.25em;
+        margin-right: auto;
+}
+
+.icon {
+        width: 64px;
+        margin-right: 16px;
+}
+
+.server {
+        margin-right: 0;
+}
+
+.container-header-title {
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3em;
+        margin-bottom: 0;
+}
+
+.container-header-description {
+        font-size: 1.5em;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        text-align: center;
+}
+
+.recommended {
+        color: rgba(37, 245, 82, 0.5);
+}
+
+.recommended-section {
+        border: 2px solid rgba(37, 245, 82, 0.25);
+}
+
+.size {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin: 0 0 12px 0;
+}
+
+article h3 {
+        font-weight: 400;
+}
+
+section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border-radius: 32px;
+        border: 1px solid rgba(37, 245, 82, 0.05);
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+}
+
+section ul {
+        border-top: 1px solid rgba(37, 245, 82, 0.1);
+        padding: 36px 36px ;
+        margin: 0;
+        list-style-position: inside;
+        width: 85%;
+        text-align: left;
+}
+    
+section ul li {
+        width: 100%;
+        word-wrap: break-word;
+        margin-bottom: 8px; 
+        text-indent: -20px;
+        padding-left: 20px;
+}
+
+@media(max-width: 720px) {
+        .container {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .article-left section {
+                flex-direction: column;  
+        }
+
+        .article-left section a {
+                margin-right: 16px;
+                margin-bottom: 16px;
+        }
+
+        .article-left section span {
+                margin: 0;
+        }
+}
+
+.plan-button {
+        background-color: transparent;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #caffcd;
+        text-decoration: none;
+        border-radius: 999px;
+        border: 1px solid #caffcd;
+        margin-bottom: 16px;
+        transition: 0.35s ease;
+}
+.plan-button:hover {
+        background-color: #caffcd;
+        color: #000000;
+        transform: translateY(-8px);
+}
+
+.recommended-button {
+        background-color: #caffcd;
+        color: #000000;
+}
+
+.current-plan {
+        opacity: 0.5;
+        color: #808080;
+        border: #808080 1px solid;
+}
+.current-plan:hover {
+        cursor: not-allowed;
+        background-color: transparent;
+        color: #808080;
+        border: #808080 1px solid;
+        transform: translateY(0px);
+}
